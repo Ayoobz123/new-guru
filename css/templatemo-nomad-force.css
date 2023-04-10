@@ -248,8 +248,8 @@ strong {
   z-index: 9;
   right: 0;
   left: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
 }
 
 .navbar-brand {
@@ -421,7 +421,7 @@ strong {
   width: 100%;
   height: 72%;
   max-height: 289px;
-  min-height: 730px;
+  min-height: 710px;
   object-fit: cover;
   margin-bottom: 118px;
 }
@@ -452,11 +452,6 @@ strong {
 
 .carousel-control-prev {
   right: 104rem;
-  left: auto;
-}
-
-.carousel-control-next {
-  right: -44px;
 }
 
 .carousel-control-next-icon, 
@@ -749,6 +744,12 @@ strong {
 
 }
 
+@media screen and (min-width:2200px) {
+  img{
+    width:1200px
+  }
+}
+
 @media screen and (max-width:996px) {
   .statement{
       height: 1000px;
@@ -797,7 +798,7 @@ strong {
   left:0;
 }
 
-.services{
+.service{
   color: #F57E25;
 }
 
@@ -905,7 +906,7 @@ strong {
 
 .statement{
   background-image: url(/images/service.png); 
-  padding: 0px 0px 192px 0px;
+  padding: 400px 0px 192px 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -913,20 +914,23 @@ strong {
 
 .about{
   background-image: url(/images/about.png); 
-  padding: 0px 0px 23px 0px;
+  padding: 400px 0px 23px 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (min-width:1400px)
+@media screen and (min-width:1400px)
 {
-  .container .signature{
-    width: 2500px;
+  img{
+    width: 700px;
   }
 }
 
 @media screen and (min-width:1800px) {
+  img{
+    width:946px;
+  }
   .tooltip-inner{
     max-width: 364px;
     padding: 1.25rem 0.5rem;
