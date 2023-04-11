@@ -920,10 +920,30 @@ strong {
   background-size: cover;
 }
 
-@media screen and (min-width:1400px)
+@media screen and (max-width:1799px) and (min-width:600px)
 {
   img{
     width: 700px;
+  }
+
+  .tooltip-inner{
+    max-width: 364px;
+    padding: 1.25rem 0.5rem;
+    color: #F57E25;
+    text-align: justify;
+    background-color: #f57f2500;
+    border-radius: 0.25rem;
+    font-family: 'GothamLight';
+    margin-top: 121px;
+    margin-left: 549px;
+  }
+
+  .vision{
+    margin-left: 228px;
+  }
+
+  .mission{
+    margin-left: 111px;
   }
 }
 
@@ -931,6 +951,7 @@ strong {
   img{
     width:946px;
   }
+
   .tooltip-inner{
     max-width: 364px;
     padding: 1.25rem 0.5rem;
