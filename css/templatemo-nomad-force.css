@@ -190,10 +190,9 @@ a:hover {
 .overlay {
   background: linear-gradient(to top, #000, transparent 90%);
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 26px;
+  left: 29px;
 }
 
 /*---------------------------------------
@@ -920,7 +919,7 @@ strong {
   background-size: cover;
 }
 
-@media screen and (max-width:1799px) and (min-width:600px)
+@media screen and (max-width:1799px) and (min-width:800px)
 {
   img{
     width: 700px;
