@@ -262,21 +262,6 @@ strong {
   padding-left: 15px;
 }
 
-.navbar-nav .nav-link::after {
-  content: "\f140";
-  font-family: bootstrap-icons;
-  display: inline-block;
-  margin-left: 10px;
-  color: var(--primary-color);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  transform: translateY(10px);
-}
-
 .navbar-nav .nav-link:hover::after {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -928,21 +913,34 @@ strong {
   .tooltip-inner{
     max-width: 364px;
     padding: 1.25rem 0.5rem;
-    color: #F57E25;
+    color: #ffffff;
     text-align: justify;
     background-color: #f57f2500;
     border-radius: 0.25rem;
     font-family: 'GothamLight';
     margin-top: 121px;
     margin-left: 549px;
+    font-weight: bold;
+  }
+
+  .tooltip-inner p{
+    font-weight: bold;
+    color: #F57E25;
+
   }
 
   .vision{
     margin-left: 228px;
+    background-color: #494e5200;
+    color: #F57E25;
+    cursor: pointer;
   }
 
   .mission{
     margin-left: 111px;
+    background-color: #494e5200;
+    color: #F57E25;
+    cursor: pointer;
   }
 }
 
@@ -954,21 +952,38 @@ strong {
   .tooltip-inner{
     max-width: 364px;
     padding: 1.25rem 0.5rem;
-    color: #F57E25;
+    color: #ffffff;
     text-align: justify;
     background-color: #f57f2500;
     border-radius: 0.25rem;
     font-family: 'GothamLight';
     margin-top: 121px;
-    margin-left: 1088px;
+    margin-left: 1487px;
+    font-weight: bold;
   }
-
+  .tooltip-inner p{
+    font-weight: bold;
+    color: #F57E25;
+  }
   .vision{
-    margin-left: 268px;
+    margin-left: 900px;
+    background-color: #494e5200;
+    color: #F57E25;
+    cursor: pointer;
   }
 
   .mission{
-    margin-left: 127px;
+    margin-left: 800px;
+    background-color: #494e5200;
+    color: #F57E25;
+    cursor: pointer;
+  }
+
+  .goals{
+    margin-left: 700px;
+    background-color: #494e5200;
+    color: #F57E25;
+    cursor: pointer;
   }
   
 }
@@ -979,10 +994,16 @@ strong {
       padding: 1.25rem 0.5rem;
       color: #fff;
       text-align: justify;
-      background-color: #F57E25;
+      background-color: #f57f2500;
       border-radius: 0.25rem;
       font-family: 'GothamLight';
       margin-top: 103px;
+  }
+
+  .tooltip-inner p{
+    font-weight: bold;
+    color: #F57E25;
+
   }
 }
 
@@ -1004,4 +1025,47 @@ strong {
 
 .projects .border-end {
   border-right: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+.accordion{
+  width: 100%;
+  margin: 0px;
+}
+
+.accordion ul,
+.accordion li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: rgb(33,37,41);
+  border-bottom: 1px solid #fff;
+  font-size: 1.4em;
+  color: #F57E25;
+  font-family: 'GothamLight';
+  font-weight: bold;
+}
+
+.accordion .accordion-content{
+  font-size: 1em;
+  padding: 20px;
+  background: #F57E25;
+  display: none;
+  color: #ffff;
+  font-family: 'GothamLight';
+}
+
+.accordion li a:hover ~ .accordion-content{
+  display: block;
+}
+
+@media screen and (min-width:1400px){
+  .container{
+    max-width: 80%;
+  }
 }
