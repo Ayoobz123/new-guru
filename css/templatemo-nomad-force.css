@@ -889,19 +889,17 @@ strong {
 }
 
 .statement{
-  background-image: url(/images/service.png); 
-  padding: 0px 0px 0px 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  height: 840px;
+  background-image: url(/images/service.png);
+  background-size: 100% 100%; 
 }
 
 .about{
+  width: 100%;
+  height: 662px;
   background-image: url(/images/about.png); 
-  padding: 400px 0px 23px 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%; 
 }
 
 @media screen and (max-width:1799px) and (min-width:800px)
@@ -966,7 +964,7 @@ strong {
     color: #F57E25;
   }
   .vision{
-    margin-left: 400px;
+    margin-left: 382px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
@@ -980,7 +978,7 @@ strong {
   }
 
   .goals{
-    margin-left: 200px;
+    margin-left: 217px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
@@ -1005,6 +1003,7 @@ strong {
     color: #F57E25;
 
   }
+
 }
 
 .projects {
