@@ -890,7 +890,7 @@ strong {
 
 .statement{
   background-image: url(/images/service.png); 
-  padding: 400px 0px 192px 0px;
+  padding: 0px 0px 0px 0px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -957,8 +957,8 @@ strong {
     background-color: #f57f2500;
     border-radius: 0.25rem;
     font-family: 'GothamLight';
-    margin-top: 121px;
-    margin-left: 1487px;
+    margin-top: 100px;
+    margin-left: 800px;
     font-weight: bold;
   }
   .tooltip-inner p{
@@ -966,21 +966,21 @@ strong {
     color: #F57E25;
   }
   .vision{
-    margin-left: 700px;
+    margin-left: 400px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
   }
 
   .mission{
-    margin-left: 600px;
+    margin-left: 300px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
   }
 
   .goals{
-    margin-left: 500px;
+    margin-left: 200px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
