@@ -249,6 +249,7 @@ strong {
   left: 0;
   /* padding-top: 15px;
   padding-bottom: 15px; */
+  position: fixed;
 }
 
 .navbar-brand {
@@ -745,6 +746,7 @@ strong {
     margin-left: 653%;
     font-weight: bold;
     font-family: 'GothamLight';
+    color: #aaaaaa;
   }
   
   .tooltip-vision p {
@@ -1302,8 +1304,12 @@ strong {
   z-index: 1;
   margin-left: 387px;
   width: 500px;
+  color: #aaaaaa;
 }
-
+.tooltip-vision .organization{
+  color: #F57E25;
+  font-family: 'GothamLight';
+}
 .tooltip-vision::after{
   content: "";
   position: absolute;
@@ -1316,7 +1322,7 @@ strong {
 
 .navbar .vision_li{
   margin-top: 64%;
-  margin-left: 611%;
+  margin-left: 629%;
   list-style-type: none;
   font-family: 'GothamLight';
   color: #F57E25;
@@ -1396,6 +1402,7 @@ strong {
   z-index: 1;
   margin-left: 473px;
   width: 520px;
+  color: #aaaaaa;
 }
 
 .tooltip-mission::after{
@@ -1481,6 +1488,7 @@ strong {
   z-index: 1;
   margin-left: 550px;
   width: 520px;
+  color: #aaaaaa;
 }
 
 .tooltip-goals::after{
