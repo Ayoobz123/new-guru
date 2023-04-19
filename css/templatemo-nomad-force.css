@@ -415,7 +415,7 @@ strong {
   width: 100%;
   height: 72%;
   max-height: 289px;
-  min-height: 730px;
+  min-height: 737px;
   margin-bottom: 118px;
 }
 
@@ -1162,34 +1162,79 @@ strong {
     max-width: 80%;
   }
 
-  .tooltip-vision {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 653%;
-    font-weight: bold;
+  .navbar .vision_li {
+    margin-top: 65%;
+    margin-left: 619%;
+    list-style-type: none;
     font-family: 'GothamLight';
-  }
-  
-  .tooltip-vision p {
-    font-weight: bold;
     color: #F57E25;
   }
-  .hover-text:hover .tooltip-vision {
-    visibility: visible;
+
+  .tooltip-vision {
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 450px;
+    width: 450px;
+    color: #aaaaaa;
   }
-  #vision {
-    top: -8px;
-    left: 120%;
+
+  .navbar .mission_li {
+    margin-top: 21%;
+    margin-left: 492%;
+    list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
   }
 
   .tooltip-mission {
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 550px;
+    width: 394px;
+    color: #aaaaaa;
+  }
+
+  .navbar .goals_li {
+    margin-top: 24%;
+    margin-left: 348%;
+    list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
+  }
+
+  .tooltip-goals {
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 600px;
+    width: 398px;
+    color: #aaaaaa;
+  }
+
+
+  /* .tooltip-vision {
     visibility: hidden;
     position: absolute;
     z-index: 1;
@@ -1202,16 +1247,43 @@ strong {
     margin-left: 653%;
     font-weight: bold;
     font-family: 'GothamLight';
-  }
+  } */
   
-  .tooltip-mission p {
+  /* .tooltip-vision p {
     font-weight: bold;
     color: #F57E25;
-  }
-  .hover-text:hover .tooltip-mission {
+  } */
+  /* .hover-text:hover .tooltip-vision {
     visibility: visible;
-  }
-  #mission {
+  } */
+  /* #vision {
+    top: -8px;
+    left: 120%;
+  } */
+
+  /* .tooltip-mission {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 511px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 12px 9px 15px;
+    text-align: justify;
+    margin-left: 653%;
+    font-weight: bold;
+    font-family: 'GothamLight';
+  } */
+  
+  /* .tooltip-mission p {
+    font-weight: bold;
+    color: #F57E25;
+  } */
+  /* .hover-text:hover .tooltip-mission {
+    visibility: visible;
+  } */
+  /* #mission {
     top: -8px;
     left: 120%;
   }
@@ -1224,7 +1296,7 @@ strong {
     text-align: center;
     cursor: pointer;
     color: #F57E25;
-  }
+  } */
   /* .tooltip-inner{
     max-width: 364px;
     padding: 1.25rem 0.5rem;
@@ -1241,12 +1313,12 @@ strong {
     font-weight: bold;
     color: #F57E25;
   } */
-  .vision{
+  /* .vision{
     margin-left: 382px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
-  }
+  } */
 
   /* .mission{
     margin-left: 300px;
@@ -1255,13 +1327,13 @@ strong {
     cursor: pointer;
   } */
 
-  .goals{
+  /* .goals{
     margin-left: 217px;
     background-color: #494e5200;
     color: #F57E25;
     cursor: pointer;
-  }
-  .tooltip-goals {
+  } */
+  /* .tooltip-goals {
     visibility: hidden;
     position: absolute;
     z-index: 1;
@@ -1275,37 +1347,21 @@ strong {
     font-weight: bold;
     font-family: 'GothamLight';
     margin-top: -150%;
-  }
+  } */
   
-  .tooltip-goals p {
+  /* .tooltip-goals p {
     font-weight: bold;
     color: #F57E25;
-  }
-  .hover-text:hover .tooltip-goals {
+  } */
+  /* .hover-text:hover .tooltip-goals {
     visibility: visible;
-  }
-  #goals {
+  } */
+  /* #goals {
     top: -8px;
     left: 120%;
-  }
+  } */
 }
 
-/*vision CSS*/
-.tooltip-vision{
-  position: absolute;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: -7px;
-  margin: -20px 0 0 0;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  margin-left: 387px;
-  width: 500px;
-  color: #aaaaaa;
-}
 .tooltip-vision .organization{
   color: #F57E25;
   font-family: 'GothamLight';
@@ -1319,16 +1375,6 @@ strong {
   border-style: solid;
   border-color: #222 transparent transparent transparent;
 }
-
-.navbar .vision_li{
-  margin-top: 64%;
-  margin-left: 629%;
-  list-style-type: none;
-  font-family: 'GothamLight';
-  color: #F57E25;
-  ;
-}
-
 
 .navbar li:hover .tooltip-vision{
   visibility: visible;
@@ -1374,9 +1420,10 @@ strong {
   }
 
   .navbar .vision_li {
-    margin-top: 194%;
-    margin-left: 0%;
+    margin-top: 154%;
     list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
   }
 
   .navbar .mission_li {
@@ -1388,23 +1435,6 @@ strong {
   }
 }
 
-/*mission CSS*/
-.tooltip-mission{
-  position: absolute;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: -7px;
-  margin: -20px 0 0 0;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  margin-left: 473px;
-  width: 520px;
-  color: #aaaaaa;
-}
-
 .tooltip-mission::after{
   content: "";
   position: absolute;
@@ -1414,15 +1444,6 @@ strong {
   border-style: solid;
   border-color: #222 transparent transparent transparent;
 }
-
-.navbar .mission_li{
-  margin-top: 31%;
-  margin-left: 484%;
-  list-style-type: none;
-  font-family: 'GothamLight';
-  color: #F57E25;
-}
-
 
 .navbar li:hover .tooltip-mission{
   visibility: visible;
@@ -1475,21 +1496,6 @@ strong {
  /* Edited code */
 
  /*goal CSS*/
-.tooltip-goals{
-  position: absolute;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: -7px;
-  margin: -20px 0 0 0;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  margin-left: 550px;
-  width: 520px;
-  color: #aaaaaa;
-}
 
 .tooltip-goals::after{
   content: "";
@@ -1500,15 +1506,6 @@ strong {
   border-style: solid;
   border-color: #222 transparent transparent transparent;
 }
-
-.navbar .goals_li{
-  margin-top: 31%;
-  margin-left: 340%;
-  list-style-type: none;
-  font-family: 'GothamLight';
-  color: #F57E25;
-}
-
 
 .navbar li:hover .tooltip-goals{
   visibility: visible;
@@ -1554,6 +1551,8 @@ strong {
     margin-top: 194%;
     margin-left: 0%;
     list-style-type: none;
+    color: #F57E25;
+    font-family: 'GothamLight';
   }
 }
  /* Edited code */
