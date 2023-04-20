@@ -860,6 +860,107 @@ strong {
   }
 }
 
+@media screen and (min-width:1200px){
+  /* vision css */
+  .navbar .vision_li{
+    margin-top: 163%;
+    margin-left: 533%;
+    list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
+  }
+  
+  .navbar li:hover .tooltip-vision{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tooltip-vision .organization {
+    color: #F57E25;
+    font-family: 'GothamLight';
+  }
+
+  .tooltip-vision{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 249px;
+    width: 324px;
+    color: #aaaaaa;
+  }
+  /* mission css */
+  .navbar .mission_li{
+    margin-top: 31%;
+    margin-left: 452%;
+    list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
+  }
+    
+  .navbar li:hover .tooltip-mission{
+    visibility: visible;
+    opacity: 1;
+  }
+    
+  .tooltip-mission .organization {
+    color: #F57E25;
+    font-family: 'GothamLight';
+  }
+
+  .tooltip-mission{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 298px;
+    width: 324px;
+    color: #aaaaaa;
+  }
+  
+  /* goals css */
+  .navbar .goals_li{
+    margin-top: 16%;
+    margin-left: 363%;
+    list-style-type: none;
+    font-family: 'GothamLight';
+    color: #F57E25;
+  }
+    
+  .navbar li:hover .tooltip-goals{
+    visibility: visible;
+    opacity: 1;
+  }
+    
+  .tooltip-goals .organization {
+    color: #F57E25;
+    font-family: 'GothamLight';
+  }
+
+  .tooltip-goals{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    margin-left: 348px;
+    width: 324px;
+    color: #aaaaaa;
+  }
+    
+}
+
 @media screen and (max-width:996px) {
   .statement{
       height: 1000px;
