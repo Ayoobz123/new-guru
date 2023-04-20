@@ -249,7 +249,7 @@ strong {
   left: 0;
   /* padding-top: 15px;
   padding-bottom: 15px; */
-  position: fixed;
+  position: relative;
 }
 
 .navbar-brand {
@@ -730,242 +730,10 @@ strong {
   img{
     width:1200px
   }
-
-  .tooltip-vision {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 653%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-    color: #aaaaaa;
-  }
-  
-  .tooltip-vision p {
-    font-weight: bold;
-    color: #F57E25;
-  }
-  .hover-text:hover .tooltip-vision {
-    visibility: visible;
-  }
-  #vision {
-    top: -8px;
-    left: 120%;
-  }
-
-  .tooltip-mission {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 653%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-  }
-  
-  .tooltip-mission p {
-    font-weight: bold;
-    color: #F57E25;
-  }
-  .hover-text:hover .tooltip-mission {
-    visibility: visible;
-  }
-  #mission {
-    top: -8px;
-    left: 120%;
-  }
-  
-  .hover-text {
-    position: relative;
-    display: inline-block;
-    margin: 40px;
-    font-family: 'GothamLight';
-    text-align: center;
-    cursor: pointer;
-    color: #F57E25;
-  }
-  /* .tooltip-inner{
-    max-width: 364px;
-    padding: 1.25rem 0.5rem;
-    color: #ffffff;
-    text-align: justify;
-    background-color: #f57f2500;
-    border-radius: 0.25rem;
-    font-family: 'GothamLight';
-    margin-top: 100px;
-    margin-left: 800px;
-    font-weight: bold;
-  } */
-  /* .tooltip-inner p{
-    font-weight: bold;
-    color: #F57E25;
-  } */
-  .vision{
-    margin-left: 382px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  }
-
-  /* .mission{
-    margin-left: 300px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  } */
-
-  .goals{
-    margin-left: 217px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  }
-  .tooltip-goals {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 2000%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-    margin-top: -150%;
-  }
-  
-  .tooltip-goals p {
-    font-weight: bold;
-    color: #F57E25;
-  }
-  .hover-text:hover .tooltip-goals {
-    visibility: visible;
-  }
-  #goals {
-    top: -8px;
-    left: 120%;
-  }
 }
 
-@media screen and (min-width:1200px){
-  /* vision css */
-  .navbar .vision_li{
-    margin-top: 163%;
-    margin-left: 533%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-  
-  .navbar li:hover .tooltip-vision{
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .tooltip-vision .organization {
-    color: #F57E25;
-    font-family: 'GothamLight';
-  }
 
-  .tooltip-vision{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 249px;
-    width: 324px;
-    color: #aaaaaa;
-  }
-  /* mission css */
-  .navbar .mission_li{
-    margin-top: 31%;
-    margin-left: 452%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-    
-  .navbar li:hover .tooltip-mission{
-    visibility: visible;
-    opacity: 1;
-  }
-    
-  .tooltip-mission .organization {
-    color: #F57E25;
-    font-family: 'GothamLight';
-  }
 
-  .tooltip-mission{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 298px;
-    width: 324px;
-    color: #aaaaaa;
-  }
-  
-  /* goals css */
-  .navbar .goals_li{
-    margin-top: 16%;
-    margin-left: 363%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-    
-  .navbar li:hover .tooltip-goals{
-    visibility: visible;
-    opacity: 1;
-  }
-    
-  .tooltip-goals .organization {
-    color: #F57E25;
-    font-family: 'GothamLight';
-  }
-
-  .tooltip-goals{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 348px;
-    width: 324px;
-    color: #aaaaaa;
-  }
-    
-}
-
-@media screen and (max-width:996px) {
-  .statement{
-      height: 1000px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .news-detail-title {
@@ -1129,50 +897,14 @@ strong {
   background-size: 100% 100%; 
 }
 
-@media screen and (max-width:1799px) and (min-width:800px)
-{
-  img{
-    width: 700px;
-  }
 
-  .tooltip-inner{
-    max-width: 364px;
-    padding: 1.25rem 0.5rem;
-    color: #ffffff;
-    text-align: justify;
-    background-color: #f57f2500;
-    border-radius: 0.25rem;
-    font-family: 'GothamLight';
-    margin-top: 121px;
-    margin-left: 549px;
-    font-weight: bold;
-  }
-
-  .tooltip-inner p{
-    font-weight: bold;
-    color: #F57E25;
-
-  }
-
-  .vision{
-    margin-left: 228px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  }
-
-  .mission{
-    margin-left: 111px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  }
-}
 
 @media screen and (min-width:1800px) {
   img{
     width:946px;
   }
+
+  
 }
 
 @media screen and (max-width:576px) {
@@ -1256,216 +988,271 @@ strong {
   display: block;
 }
 
-@media screen and (min-width:1400px){
+.navbar ul{
+  margin: 0;padding: 0;
+  list-style-type: none;
+  background-color: #333;
+  overflow: hidden;
+}
+.navbar li {
+  float: left;
+  text-align: center;
+}
+.navbar li a, .dropbtn{
+  display: inline-block;
+  text-align: center;
+  color: white;
+  font-size:larger;
+  padding: 12px 17px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+}
+
+/*
+.navbar .dropdown{
+  display: inline-block;
+}*/
+
+
+/*vision tooltip CSS*/
+.vision-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 196px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .vision_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 26%;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.vision-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .vision-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*mission tooltip CSS*/
+.mission-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 447px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+
+}
+
+.details .mission_li{
+	color: #fff;
+  list-style-type: none;
+  margin-left: -13%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.mission-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .mission-text{
+  visibility: visible;
+  opacity: 1;
+}
+/*goals tooltip CSS*/
+.goals-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 263px;
+  text-align: justify;
+  color: white;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .goals_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 16%;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.goals-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .goals-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width:540px) {
+  .navbar li {
+      float: none;
+  }
+  
+    .vision-text {
+      position: fixed;
+      display: flex;
+      margin-left: 16%;
+      text-align: justify;
+      margin-top: -1vh;
+      color: white;
+      transition: opacity 1s;
+      z-index: 1;
+    }
+
+      .vision-text::after {
+        content: "";
+        position: absolute;
+        transform: rotate(270deg);
+        top: 20%;
+        margin: 0 0 0 53%;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #222 transparent transparent transparent;
+    }
+
+    .details .vision_li{
+      color: #fff;
+      list-style-type: none;
+      margin-left: -10%;
+      margin-top: 3%;
+      cursor: pointer;
+    }
+
+    .mission-text {
+      position: fixed;
+      display: flex;
+      margin-left: 16%;
+      text-align: justify;
+      margin-top: -1vh;
+      color: white;
+      transition: opacity 1s;
+      z-index: 1;
+    }
+
+      .mission-text::after {
+        content: "";
+        position: absolute;
+        transform: rotate(270deg);
+        top: 20%;
+        margin: 0 0 0 53%;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #222 transparent transparent transparent;
+    }
+
+    .details .mission_li{
+      color: #fff;
+      list-style-type: none;
+      margin-left: -10%;
+      margin-top: 3%;
+      cursor: pointer;
+    }
+
+    .goals-text {
+      position: fixed;
+      display: flex;
+      margin-left: 16%;
+      text-align: justify;
+      margin-top: -1vh;
+      color: white;
+      transition: opacity 1s;
+      z-index: 1;
+    }
+
+      .goals-text::after {
+        content: "";
+        position: absolute;
+        transform: rotate(270deg);
+        top: 20%;
+        margin: 0 0 0 53%;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #222 transparent transparent transparent;
+    }
+
+    .details .goals_li{
+      color: #fff;
+      list-style-type: none;
+      margin-left: -10%;
+      margin-top: 3%;
+      cursor: pointer;
+    }
+  }
+  
+@media screen and (max-width:2200px) and (min-width:1799px){
   .container{
     max-width: 80%;
   }
 
-  .navbar .vision_li {
-    margin-top: 65%;
-    margin-left: 619%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-
-  .tooltip-vision {
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 450px;
-    width: 450px;
-    color: #aaaaaa;
-  }
-
-  .navbar .mission_li {
-    margin-top: 21%;
-    margin-left: 492%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-
-  .tooltip-mission {
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: -7px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 550px;
-    width: 394px;
-    color: #aaaaaa;
-  }
-
-  .navbar .goals_li {
-    margin-top: 24%;
-    margin-left: 348%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-
-  .tooltip-goals {
-    position: absolute;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: -7px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    margin-left: 600px;
-    width: 398px;
-    color: #aaaaaa;
-  }
-
-
-  /* .tooltip-vision {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 653%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-  } */
-  
-  /* .tooltip-vision p {
-    font-weight: bold;
-    color: #F57E25;
-  } */
-  /* .hover-text:hover .tooltip-vision {
-    visibility: visible;
-  } */
-  /* #vision {
-    top: -8px;
-    left: 120%;
-  } */
-
-  /* .tooltip-mission {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 653%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-  } */
-  
-  /* .tooltip-mission p {
-    font-weight: bold;
-    color: #F57E25;
-  } */
-  /* .hover-text:hover .tooltip-mission {
-    visibility: visible;
-  } */
-  /* #mission {
-    top: -8px;
-    left: 120%;
-  }
-  
-  .hover-text {
-    position: relative;
-    display: inline-block;
-    margin: 40px;
-    font-family: 'GothamLight';
-    text-align: center;
-    cursor: pointer;
-    color: #F57E25;
-  } */
-  /* .tooltip-inner{
-    max-width: 364px;
-    padding: 1.25rem 0.5rem;
-    color: #ffffff;
-    text-align: justify;
-    background-color: #f57f2500;
-    border-radius: 0.25rem;
-    font-family: 'GothamLight';
-    margin-top: 100px;
-    margin-left: 800px;
-    font-weight: bold;
-  } */
-  /* .tooltip-inner p{
-    font-weight: bold;
-    color: #F57E25;
-  } */
-  /* .vision{
-    margin-left: 382px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  } */
-
-  /* .mission{
-    margin-left: 300px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  } */
-
-  /* .goals{
-    margin-left: 217px;
-    background-color: #494e5200;
-    color: #F57E25;
-    cursor: pointer;
-  } */
-  /* .tooltip-goals {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 511px;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    padding: 10px 12px 9px 15px;
-    text-align: justify;
-    margin-left: 1140%;
-    font-weight: bold;
-    font-family: 'GothamLight';
-    margin-top: -150%;
-  } */
-  
-  /* .tooltip-goals p {
-    font-weight: bold;
-    color: #F57E25;
-  } */
-  /* .hover-text:hover .tooltip-goals {
-    visibility: visible;
-  } */
-  /* #goals {
-    top: -8px;
-    left: 120%;
-  } */
+  /*vision tooltip CSS*/
+.vision-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 375px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
 }
 
-.tooltip-vision .organization{
-  color: #F57E25;
-  font-family: 'GothamLight';
+.details .vision_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 24%;
+  margin-top: 3%;
+  cursor: pointer;
 }
-.tooltip-vision::after{
+
+.vision-text::after{
   content: "";
   position: absolute;
   margin-left: -5px;
@@ -1475,66 +1262,34 @@ strong {
   border-color: #222 transparent transparent transparent;
 }
 
-.navbar li:hover .tooltip-vision{
+.details li:hover .vision-text{
   visibility: visible;
   opacity: 1;
 }
 
- /* Edited code */
-
-@media screen and (max-width:540px) {
-  .navbar li {
-      float: none;
-      margin-top: 228%;
-      margin-left: 0%;
-      list-style-type: none;
-  }
-  
-  .tooltip-vision {
-    position: absolute;
-    display: flex;
-    /* padding: 1px 3px; */
-    margin-left: 10%;
-    text-align: justify;
-    background-color: #333;
-    margin-top: 2vh;
-    color: white;
-    border: 0.5px solid black;
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 270px;
-  }
-  
-  .tooltip-vision::after {
-      content: "";
-      position: absolute;
-      transform: rotate(270deg);
-      top: 20%;
-      margin: 0 0 0 53%;
-      border-width: 6px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
-  }
-
-  .navbar .vision_li {
-    margin-top: 154%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
-
-  .navbar .mission_li {
-    margin-top: 194%;
-    margin-left: 0%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
+/*mission tooltip CSS*/
+.mission-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 447px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
 }
 
-.tooltip-mission::after{
+.details .mission_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 19%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.mission-text::after{
   content: "";
   position: absolute;
   margin-left: -5px;
@@ -1544,59 +1299,34 @@ strong {
   border-color: #222 transparent transparent transparent;
 }
 
-.navbar li:hover .tooltip-mission{
+.details li:hover .mission-text{
   visibility: visible;
   opacity: 1;
 }
-@media screen and (max-width:540px) {
-  .navbar li {
-      float: none;
-      margin-top: 228%;
-      margin-left: 0%;
-      list-style-type: none;
-  }
-  
-  .tooltip-mission {
-    position: absolute;
-    display: flex;
-    /* padding: 1px 3px; */
-    margin-left: 10%;
-    text-align: justify;
-    background-color: #333;
-    margin-top: 2vh;
-    color: white;
-    border: 0.5px solid black;
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 270px;
-  }
-  
-  .tooltip-mission::after {
-      content: "";
-      position: absolute;
-      transform: rotate(270deg);
-      top: 20%;
-      margin: 0 0 0 53%;
-      border-width: 6px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
-  }
-
-  .navbar .mission_li {
-    margin-top: 194%;
-    margin-left: 0%;
-    list-style-type: none;
-    font-family: 'GothamLight';
-    color: #F57E25;
-  }
+/*goals tooltip CSS*/
+.goals-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 540px;
+  text-align: justify;
+  color: white;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
 }
- /* Edited code */
 
- /*goal CSS*/
+.details .goals_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 13%;
+  margin-top: 1%;
+  cursor: pointer;
+}
 
-.tooltip-goals::after{
+.goals-text::after{
   content: "";
   position: absolute;
   margin-left: -5px;
@@ -1606,52 +1336,487 @@ strong {
   border-color: #222 transparent transparent transparent;
 }
 
-.navbar li:hover .tooltip-goals{
+.details li:hover .goals-text{
   visibility: visible;
   opacity: 1;
 }
-@media screen and (max-width:540px) {
-  .navbar li {
-      float: none;
-      margin-top: 228%;
-      margin-left: 0%;
-      list-style-type: none;
-  }
-  
-  .tooltip-goals {
-    position: absolute;
-    display: flex;
-    /* padding: 1px 3px; */
-    margin-left: 10%;
+
+}
+@media screen and (max-width:1800px) and (min-width:1600px){
+    .container{
+      max-width: 80%;
+    }
+
+    /*vision tooltip CSS*/
+  .vision-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 375px;
     text-align: justify;
-    background-color: #333;
-    margin-top: 2vh;
     color: white;
-    border: 0.5px solid black;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .details .vision_li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 24%;
+    margin-top: 6%;
+    cursor: pointer;
+  }
+
+  .vision-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .vision-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*mission tooltip CSS*/
+  .mission-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 447px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .details .mission_li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 19%;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+
+  .mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .mission-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  /*goals tooltip CSS*/
+  .goals-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 540px;
+    text-align: justify;
+    color: white;
     border-radius: 2px;
     opacity: 0;
     transition: opacity 1s;
     z-index: 1;
-    width: 270px;
-  }
-  
-  .tooltip-goals::after {
-      content: "";
-      position: absolute;
-      transform: rotate(270deg);
-      top: 20%;
-      margin: 0 0 0 53%;
-      border-width: 6px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
+    width: 35%;
   }
 
-  .navbar .goals_li {
-    margin-top: 194%;
-    margin-left: 0%;
+  .details .goals_li{
+    color: #fff;
     list-style-type: none;
-    color: #F57E25;
-    font-family: 'GothamLight';
+    margin-left: 13%;
+    margin-top: 1%;
+    cursor: pointer;
   }
+
+  .goals-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .goals-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
 }
- /* Edited code */
+
+@media screen and (max-width:1599px) and (min-width:1400px){
+  .container{
+    max-width: 80%;
+  }
+
+  /*vision tooltip CSS*/
+.vision-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 375px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .vision_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 24%;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.vision-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .vision-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*mission tooltip CSS*/
+.mission-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 447px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .mission_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 19%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.mission-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .mission-text{
+  visibility: visible;
+  opacity: 1;
+}
+/*goals tooltip CSS*/
+.goals-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 540px;
+  text-align: justify;
+  color: white;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .goals_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 13%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.goals-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .goals-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+}
+
+@media screen and (max-width:1399px) and (min-width:1200px){
+    .container{
+      max-width: 80%;
+    }
+
+    /*vision tooltip CSS*/
+  .vision-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 375px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .details .vision_li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 24%;
+    margin-top: 15%;
+    cursor: pointer;
+  }
+
+  .vision-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .vision-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*mission tooltip CSS*/
+  .mission-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 447px;
+    text-align: justify;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .details .mission_li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 19%;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+
+  .mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .mission-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  /*goals tooltip CSS*/
+  .goals-text{
+    position: fixed;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 540px;
+    text-align: justify;
+    color: white;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 35%;
+  }
+
+  .details .goals_li{
+    color: #fff;
+    list-style-type: none;
+    margin-left: 13%;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+
+  .goals-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+
+  .details li:hover .goals-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+@media screen and (max-width:1199px) and (min-width:992px){
+  .container{
+    max-width: 80%;
+  }
+
+  /*vision tooltip CSS*/
+.vision-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 192px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .vision_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 24%;
+  margin-top: 18%;
+  cursor: pointer;
+}
+
+.vision-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .vision-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*mission tooltip CSS*/
+.mission-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 231px;
+  text-align: justify;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .mission_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 19%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.mission-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .mission-text{
+  visibility: visible;
+  opacity: 1;
+}
+/*goals tooltip CSS*/
+.goals-text{
+  position: fixed;
+  display: inline-block;
+  padding: 1px 3px;
+  margin-left: 283px;
+  text-align: justify;
+  color: white;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 35%;
+}
+
+.details .goals_li{
+  color: #fff;
+  list-style-type: none;
+  margin-left: 13%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.goals-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details li:hover .goals-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+}
+
+
+
+
+
+
+
