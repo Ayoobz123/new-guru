@@ -187,6 +187,7 @@ a:hover {
   height: 100%;
 }
 
+
 .overlay {
   background: linear-gradient(to top, #000, transparent 90%);
   position: absolute;
@@ -907,25 +908,7 @@ strong {
   
 }
 
-@media screen and (max-width:576px) {
-    .tooltip-inner {
-      max-width: 272px;
-      padding: 1.25rem 0.5rem;
-      color: #fff;
-      text-align: justify;
-      background-color: #f57f2500;
-      border-radius: 0.25rem;
-      font-family: 'GothamLight';
-      margin-top: 103px;
-  }
 
-  .tooltip-inner p{
-    font-weight: bold;
-    color: #F57E25;
-
-  }
-
-}
 
 .projects {
   box-shadow: 0 0 0px rgba(0, 0, 0, .08);
@@ -1017,806 +1000,134 @@ strong {
 }*/
 
 
-/*vision tooltip CSS*/
-.vision-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 196px;
-  text-align: justify;
+.masthead{
+  background-size: 100% 100%;
+  min-height: 90vh;
+  position: relative;
   color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
+}
+@media screen and (min-width:768px) {
+  .color-overlay{
+    width: 67%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn_align{
+    right: 4rem!important; 
+    position: relative; 
+    top: -1rem!important;
+  }
+
+  .btn_align1{
+    right: 8rem!important; 
+    position: relative; top: 
+    1rem!important;
+  }
+
+  .btn_align2{
+    right: 11rem!important; 
+    position: relative; 
+    top: 2.5rem!important;
+  }
 }
 
-.details .vision_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 26%;
-  margin-top: 10%;
-  cursor: pointer;
+@media screen and (min-width:768px) {
+  .tooltip-inner {
+    max-width: 351px;
+    padding: 1.25rem 2.5rem;
+    color: #fff;
+    text-align: justify;
+    background-color: #f57e2500;
+    border-radius: 0.25rem;
+    font-family: 'GothamLight';
+    /* margin-top: 103px;
+    margin-left: 52%;
+    width: 112%; */
+  }
+
+    .tooltip {
+      position: absolute;
+      z-index: 1080;
+      display: block;
+      margin: 0;
+      font-family: var(--bs-font-sans-serif);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: left;
+      text-align: start;
+      text-decoration: none;
+      text-shadow: none;
+      text-transform: none;
+      letter-spacing: normal;
+      word-break: normal;
+      word-spacing: normal;
+      white-space: normal;
+      line-break: auto;
+      font-size: .875rem;
+      word-wrap: break-word;
+      opacity: 0;
+      padding: 3px 3px 16px 259px;
+  }
+  .color-overlay{
+    width: 67%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.vision-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
+.tooltip-inner p{
+  color: #F57E25;
+  font-family: 'GothamLight';
 }
 
-.details li:hover .vision-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-/*mission tooltip CSS*/
-.mission-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 447px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-
-}
-
-.details .mission_li{
-	color: #fff;
-  list-style-type: none;
-  margin-left: -13%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.mission-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .mission-text{
-  visibility: visible;
-  opacity: 1;
-}
-/*goals tooltip CSS*/
-.goals-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 263px;
-  text-align: justify;
-  color: white;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .goals_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 16%;
-  margin-top: 4%;
-  cursor: pointer;
-}
-
-.goals-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .goals-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-@media screen and (max-width:540px) {
-  .navbar li {
-      float: none;
+@media screen and (max-width:546px) {
+  .tooltip-inner {
+    max-width: 277px;
+    padding: 0rem 0rem;
+    color: #fff;
+    text-align: justify;
+    background-color: #F57E25;
+    border-radius: 0.25rem;
+    font-family: 'GothamLight';
+    margin-top: 103px;
   }
   
-    .vision-text {
-      position: fixed;
-      display: flex;
-      margin-left: 16%;
-      text-align: justify;
-      margin-top: -1vh;
-      color: white;
-      transition: opacity 1s;
-      z-index: 1;
-    }
-
-      .vision-text::after {
-        content: "";
-        position: absolute;
-        transform: rotate(270deg);
-        top: 20%;
-        margin: 0 0 0 53%;
-        border-width: 6px;
-        border-style: solid;
-        border-color: #222 transparent transparent transparent;
-    }
-
-    .details .vision_li{
-      color: #fff;
-      list-style-type: none;
-      margin-left: -10%;
-      margin-top: 3%;
-      cursor: pointer;
-    }
-
-    .mission-text {
-      position: fixed;
-      display: flex;
-      margin-left: 16%;
-      text-align: justify;
-      margin-top: -1vh;
-      color: white;
-      transition: opacity 1s;
-      z-index: 1;
-    }
-
-      .mission-text::after {
-        content: "";
-        position: absolute;
-        transform: rotate(270deg);
-        top: 20%;
-        margin: 0 0 0 53%;
-        border-width: 6px;
-        border-style: solid;
-        border-color: #222 transparent transparent transparent;
-    }
-
-    .details .mission_li{
-      color: #fff;
-      list-style-type: none;
-      margin-left: -10%;
-      margin-top: 3%;
-      cursor: pointer;
-    }
-
-    .goals-text {
-      position: fixed;
-      display: flex;
-      margin-left: 16%;
-      text-align: justify;
-      margin-top: -1vh;
-      color: white;
-      transition: opacity 1s;
-      z-index: 1;
-    }
-
-      .goals-text::after {
-        content: "";
-        position: absolute;
-        transform: rotate(270deg);
-        top: 20%;
-        margin: 0 0 0 53%;
-        border-width: 6px;
-        border-style: solid;
-        border-color: #222 transparent transparent transparent;
-    }
-
-    .details .goals_li{
-      color: #fff;
-      list-style-type: none;
-      margin-left: -10%;
-      margin-top: 3%;
-      cursor: pointer;
-    }
-  }
-  
-@media screen and (max-width:2200px) and (min-width:1799px){
-  .container{
-    max-width: 80%;
-  }
-
-  /*vision tooltip CSS*/
-.vision-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 375px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .vision_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 24%;
-  margin-top: 3%;
-  cursor: pointer;
-}
-
-.vision-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .vision-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-/*mission tooltip CSS*/
-.mission-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 447px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .mission_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 19%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.mission-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .mission-text{
-  visibility: visible;
-  opacity: 1;
-}
-/*goals tooltip CSS*/
-.goals-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 540px;
-  text-align: justify;
-  color: white;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .goals_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 13%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.goals-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .goals-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-}
-@media screen and (max-width:1800px) and (min-width:1600px){
-    .container{
-      max-width: 80%;
-    }
-
-    /*vision tooltip CSS*/
-  .vision-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 375px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
-  }
-
-  .details .vision_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 24%;
-    margin-top: 6%;
-    cursor: pointer;
-  }
-
-  .vision-text::after{
-    content: "";
+  .color-overlay{
+    width: 69%;
+    height: 9%;
     position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: red; */
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: space-around;
   }
 
-  .details li:hover .vision-text{
-    visibility: visible;
-    opacity: 1;
+  .btn_align{
+    right: 8rem!important;
+    position: relative;
+    top: 9rem!important;
   }
 
-  /*mission tooltip CSS*/
-  .mission-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 447px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
+  .btn_align1{
+    right: 8rem!important;
+    position: relative;
+    top: 11rem!important;
   }
 
-  .details .mission_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 19%;
-    margin-top: 1%;
-    cursor: pointer;
+  .btn_align2{
+    right: 8rem!important;
+    position: relative;
+    top: 13.5rem!important;
   }
-
-  .mission-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-
-  .details li:hover .mission-text{
-    visibility: visible;
-    opacity: 1;
-  }
-  /*goals tooltip CSS*/
-  .goals-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 540px;
-    text-align: justify;
-    color: white;
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
-  }
-
-  .details .goals_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 13%;
-    margin-top: 1%;
-    cursor: pointer;
-  }
-
-  .goals-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-
-  .details li:hover .goals-text{
-    visibility: visible;
-    opacity: 1;
-  }
-
 }
-
-@media screen and (max-width:1599px) and (min-width:1400px){
-  .container{
-    max-width: 80%;
-  }
-
-  /*vision tooltip CSS*/
-.vision-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 375px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .vision_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 24%;
-  margin-top: 10%;
-  cursor: pointer;
-}
-
-.vision-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .vision-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-/*mission tooltip CSS*/
-.mission-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 447px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .mission_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 19%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.mission-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .mission-text{
-  visibility: visible;
-  opacity: 1;
-}
-/*goals tooltip CSS*/
-.goals-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 540px;
-  text-align: justify;
-  color: white;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .goals_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 13%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.goals-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .goals-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-}
-
-@media screen and (max-width:1399px) and (min-width:1200px){
-    .container{
-      max-width: 80%;
-    }
-
-    /*vision tooltip CSS*/
-  .vision-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 375px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
-  }
-
-  .details .vision_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 24%;
-    margin-top: 15%;
-    cursor: pointer;
-  }
-
-  .vision-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-
-  .details li:hover .vision-text{
-    visibility: visible;
-    opacity: 1;
-  }
-
-  /*mission tooltip CSS*/
-  .mission-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 447px;
-    text-align: justify;
-    color: white;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
-  }
-
-  .details .mission_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 19%;
-    margin-top: 1%;
-    cursor: pointer;
-  }
-
-  .mission-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-
-  .details li:hover .mission-text{
-    visibility: visible;
-    opacity: 1;
-  }
-  /*goals tooltip CSS*/
-  .goals-text{
-    position: fixed;
-    display: inline-block;
-    padding: 1px 3px;
-    margin-left: 540px;
-    text-align: justify;
-    color: white;
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 35%;
-  }
-
-  .details .goals_li{
-    color: #fff;
-    list-style-type: none;
-    margin-left: 13%;
-    margin-top: 1%;
-    cursor: pointer;
-  }
-
-  .goals-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-
-  .details li:hover .goals-text{
-    visibility: visible;
-    opacity: 1;
-  }
-
-}
-
-@media screen and (max-width:1199px) and (min-width:992px){
-  .container{
-    max-width: 80%;
-  }
-
-  /*vision tooltip CSS*/
-.vision-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 192px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .vision_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 24%;
-  margin-top: 18%;
-  cursor: pointer;
-}
-
-.vision-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .vision-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-/*mission tooltip CSS*/
-.mission-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 231px;
-  text-align: justify;
-  color: white;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .mission_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 19%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.mission-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .mission-text{
-  visibility: visible;
-  opacity: 1;
-}
-/*goals tooltip CSS*/
-.goals-text{
-  position: fixed;
-  display: inline-block;
-  padding: 1px 3px;
-  margin-left: 283px;
-  text-align: justify;
-  color: white;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 1s;
-  z-index: 1;
-  width: 35%;
-}
-
-.details .goals_li{
-  color: #fff;
-  list-style-type: none;
-  margin-left: 13%;
-  margin-top: 1%;
-  cursor: pointer;
-}
-
-.goals-text::after{
-  content: "";
-  position: absolute;
-  margin-left: -5px;
-  left: 50%;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #222 transparent transparent transparent;
-}
-
-.details li:hover .goals-text{
-  visibility: visible;
-  opacity: 1;
-}
-
-}
-
-
-
-
-
-
-
