@@ -387,6 +387,167 @@ strong {
   .sticky-wrapper {
     position: relative;
   }
+
+  .color-overlay{
+    width: 67%;
+    height: 82%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tooltip-vision-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px -4px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 24rem;
+    left: 19rem;
+    top: -7rem;
+  }
+  
+  .tooltip-vision-text::after{
+      content: "";
+      position: absolute;
+      margin-left: -5px;
+      left: 50%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+  }
+  
+  .details .vision_li:hover .tooltip-vision-text{
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  .details ul{      
+    list-style-type: none;
+  }
+  .details li {
+    float: left;
+    text-align: center;
+    right: -5rem;
+    position: relative;
+    top: -0.5rem;
+  }
+  
+  .details li a:hover {
+    background-color: rgb(90, 81, 81);
+    text-decoration: underline;
+  }
+  
+  /* Mission */
+  
+  .tooltip-mission-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 26rem;
+  }
+  
+  .tooltip-mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details1 .mission_li:hover .tooltip-mission-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details1 ul{      
+  list-style-type: none;
+  }
+  .details1 li {
+    float: left;
+    text-align: center;
+    right: -1.5rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details1 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
+  
+  /* Goals */
+  
+  .tooltip-goals-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 30rem;
+  }
+  
+  .tooltip-goals-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details2 .goals_li:hover .tooltip-goals-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details2 ul{      
+  list-style-type: none;
+  }
+  .details2 li {
+    float: left;
+    text-align: center;
+    right: 2rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details2 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
 }
 
 .heroText {
@@ -964,37 +1125,21 @@ strong {
   display: block;
 }
 
-.navbar ul{
-  margin: 0;padding: 0;
-  list-style-type: none;
-  background-color: #33333300;
-  overflow: hidden;
-}
-.navbar li {
-  float: left;
-  text-align: center;
-}
-.navbar li a, .dropbtn{
-  display: inline-block;
-  text-align: center;
-  color: white;
-  font-size:larger;
-  padding: 12px 17px;
-  text-decoration: none;
-}
-.navbar li a:hover {
-  background-color: rgb(90, 81, 81);
-  text-decoration: underline;
-}
-
 .masthead{
   background-size: 100% 100%;
   min-height: 90vh;
   position: relative;
   color: white;
 }
-@media screen and (min-width:768px) {
-  .color-overlay{
+
+/*
+.navbar .dropdown{
+    display: inline-block;
+}*/
+
+
+@media screen and (max-width:990px) and (min-width:778px) {
+    .color-overlay{
     width: 67%;
     height: 82%;
     position: absolute;
@@ -1003,402 +1148,442 @@ strong {
     align-items: center;
   }
 
-  .btn_align{
-    right: 4rem!important; 
-    position: relative; 
-    top: -1rem!important;
-  }
-
-  .btn_align1{
-    right: 8rem!important; 
-    position: relative; top: 
-    1rem!important;
-  }
-
-  .btn_align2{
-    right: 11rem!important; 
-    position: relative; 
-    top: 2.5rem!important;
-  }
-}
-
-@media screen and (min-width:992px) {
-  .vision{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    left: 6rem;
-    font-family:"GothamLight";
-    color:#F57E25
-  }
-  .vision::before,
-  .vision::after{
-    --scale: 0;
-
+  .tooltip-vision-text{
     position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .vision::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 388%;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
     text-align: justify;
-    background: rgba(0, 0, 0, 0);
-    left: 32rem;
-    top: -19rem;
-    font-family: 'GothamLight';
-    font-weight: bold;
-    color: #9d9fa2;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 14rem;
   }
   
-  .vision:hover::before{
-    --scale: 1;
-  }
-  
-  /* goals css */
-  .goals{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    top: 4rem;
-    right: 14rem;
-    font-family:"GothamLight";
-    color:#F57E25
-  }
-  .goals::before,
-  .goals::after{
-    --scale: 0;
-
-    position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .goals::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 345%;
-    text-align: justify;
-    background: rgba(0, 0, 0, 0);
-    left: 38rem;
-    top: -27rem;
-    font-family:'GothamLight';
-    font-weight:bold;
-    color:#9d9fa2
-}
-
-  .goals:hover::before{
-    --scale: 1;
-  }
-
-    /* mission css */
-    .mission{
-      width: 100px;
-      height: 100px;
-      position: relative;
-      cursor: pointer;
-      top: 2rem;
-      right: 4rem;
-      font-family:"GothamLight";
-      color:#F57E25
-    }
-    .mission::before,
-    .mission::after{
-      --scale: 0;
-  
+  .tooltip-vision-text::after{
+      content: "";
       position: absolute;
-      content: '';
-      top: -.25rem;
-      left: 460%;
-      transform: translateX(-50%) translateY(100%) scale(var(--scale));
-      transition: 150ms transform;
-
-    }
+      margin-left: -5px;
+      left: 50%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+  }
   
-    .mission::before{
-      content: attr(data-tooltip);
-      padding: 0.5rem;
-      width: max-content;
-      max-width: 349%;
-      text-align: justify;
-      background: rgba(0, 0, 0, 0);
-      left: 35rem;
-      top: -16rem;
-      font-family: 'GothamLight';
-      font-weight: bold;
-      color: #9d9fa2;
-    }
-    .mission:hover::before{
-      --scale: 1;
-    }
+  .details .vision_li:hover .tooltip-vision-text{
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  .details ul{      
+    list-style-type: none;
+  }
+  .details li {
+    float: left;
+    text-align: center;
+    right: -5rem;
+    position: relative;
+    top: -0.5rem;
+  }
+  
+  .details li a:hover {
+    background-color: rgb(90, 81, 81);
+    text-decoration: underline;
+  }
+  
+  /* Mission */
+  
+  .tooltip-mission-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 17rem;
+  }
+  
+  .tooltip-mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details1 .mission_li:hover .tooltip-mission-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details1 ul{      
+  list-style-type: none;
+  }
+  .details1 li {
+    float: left;
+    text-align: center;
+    right: -1.5rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details1 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
+  
+  /* Goals */
+  
+  .tooltip-goals-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 21rem;
+  }
+  
+  .tooltip-goals-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details2 .goals_li:hover .tooltip-goals-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details2 ul{      
+  list-style-type: none;
+  }
+  .details2 li {
+    float: left;
+    text-align: center;
+    right: 2rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details2 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
 }
 
-@media screen and (max-width:991px) and (min-width:768px) {
-  .vision{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    left: 6rem;
-    font-family:"GothamLight";
-    color:#F57E25
-  }
-  .vision::before,
-  .vision::after{
-    --scale: 0;
-
-    position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .vision::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 388%;
-    text-align: justify;
-    background: rgba(0, 0, 0, 0);
-    left: 24rem;
-    top: -20rem;
-    font-family: 'GothamLight';
-    font-weight: bold;
-    color: #9d9fa2;
-  }
-  
-  .vision:hover::before{
-    --scale: 1;
-  }
-  
-  /* goals css */
-  .goals{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    top: 4rem;
-    right: 14rem;
-    font-family:"GothamLight";
-    color:#F57E25
-  }
-  .goals::before,
-  .goals::after{
-    --scale: 0;
-
-    position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .goals::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 345%;
-    text-align: justify;
-    background: rgba(0, 0, 0, 0);
-    left: 31rem;
-    top: -27rem;
-    font-family: 'GothamLight';
-    font-weight: bold;
-    color: #9d9fa2;
-}
-
-  .goals:hover::before{
-    --scale: 1;
-  }
-
-    /* mission css */
-    .mission{
-      width: 100px;
-      height: 100px;
-      position: relative;
-      cursor: pointer;
-      top: 2rem;
-      right: 4rem;
-      font-family:"GothamLight";
-      color:#F57E25
-    }
-    .mission::before,
-    .mission::after{
-      --scale: 0;
-  
-      position: absolute;
-      content: '';
-      top: -.25rem;
-      left: 460%;
-      transform: translateX(-50%) translateY(100%) scale(var(--scale));
-      transition: 150ms transform;
-
-    }
-  
-    .mission::before{
-      content: attr(data-tooltip);
-      padding: 0.5rem;
-      width: max-content;
-      max-width: 349%;
-      text-align: justify;
-      background: rgba(0, 0, 0, 0);
-      left: 27rem;
-      top: -16rem;
-      font-family: 'GothamLight';
-      font-weight: bold;
-      color: #9d9fa2;
-    }
-    .mission:hover::before{
-      --scale: 1;
-    }
-}
-
-@media screen and (max-width:546px) {
-  .vision{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    left: 1.5rem;
-    top: 3rem;
-    font-family:"GothamLight";
-    color:#F57E25
-  }
-  .vision::before,
-  .vision::after{
-    --scale: 0;
-
-    position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .vision::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 283%;
-    text-align: justify;
-    background: rgba(0, 0, 0, 0);
-    left: 13rem;
-    top: -26rem;
-    background: black;
-    font-family:'GothamLight';
-    font-weight:bold;
-    color:#9d9fa2
-  }
-  
-  .vision:hover::before{
-    --scale: 1;
-  }
-  
-  /* goals css */
-  .goals{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    cursor: pointer;
-    top: 9rem;
-    right: 11.7rem;
-    font-family: "GothamLight";
-    color: #F57E25;
-  }
-  .goals::before,
-  .goals::after{
-    --scale: 0;
-
-    position: absolute;
-    content: '';
-    top: -.25rem;
-    left: 460%;
-    transform: translateX(-50%) translateY(100%) scale(var(--scale));
-    transition: 150ms transform;
-  }
-
-  .goals::before{
-    content: attr(data-tooltip);
-    padding: 0.5rem;
-    width: max-content;
-    max-width: 269%;
-    text-align: justify;
-    background: rgb(0 0 0);
-    left: 12rem;
-    top: -27rem;
-    font-family:'GothamLight';
-    font-weight:bold;
-    color:#9d9fa2
-}
-
-  .goals:hover::before{
-    --scale: 1;
-  }
-
-    /* mission css */
-    .mission{
-      width: 100px;
-      height: 100px;
-      position: relative;
-      cursor: pointer;
-      top: 2rem;
-      right: 5rem;
-      top: 6rem;
-      font-family:"GothamLight";
-      color:#F57E25
-    }
-    .mission::before,
-    .mission::after{
-      --scale: 0;
-  
-      position: absolute;
-      content: '';
-      top: -.25rem;
-      left: 460%;
-      transform: translateX(-50%) translateY(100%) scale(var(--scale));
-      transition: 150ms transform;
-
-    }
-  
-    .mission::before{
-      content: attr(data-tooltip);
-      padding: 0.5rem;
-      width: max-content;
-      max-width: 245%;
-      text-align: justify;
-      background: rgba(0, 0, 0, 0);
-      left: 12rem;
-      top: -20rem;
-      background: black;
-      font-family:'GothamLight';
-      font-weight:bold;
-      color:#9d9fa2
-    }
-    .mission:hover::before{
-      --scale: 1;
-    }
+@media screen and (max-width:990px) and (min-width:778px) {
     .color-overlay{
-      width: 67%;
-      height: 82%;
+    width: 67%;
+    height: 82%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tooltip-vision-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 14rem;
+  }
+  
+  .tooltip-vision-text::after{
+      content: "";
       position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      margin-left: -5px;
+      left: 50%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+  }
+  
+  .details .vision_li:hover .tooltip-vision-text{
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  .details ul{      
+    list-style-type: none;
+  }
+  .details li {
+    float: left;
+    text-align: center;
+    right: -5rem;
+    position: relative;
+    top: -0.5rem;
+  }
+  
+  .details li a:hover {
+    background-color: rgb(90, 81, 81);
+    text-decoration: underline;
+  }
+  
+  /* Mission */
+  
+  .tooltip-mission-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 17rem;
+  }
+  
+  .tooltip-mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details1 .mission_li:hover .tooltip-mission-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details1 ul{      
+  list-style-type: none;
+  }
+  .details1 li {
+    float: left;
+    text-align: center;
+    right: -1.5rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details1 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
+  
+  /* Goals */
+  
+  .tooltip-goals-text{
+    position: absolute;
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: -7px;
+    margin: -20px 0 0 0;
+    text-align: justify;
+    /* background-color: #333; */
+    color: white;
+    /* border: 0.5px solid black; */
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    width: 20rem;
+    left: 21rem;
+  }
+  
+  .tooltip-goals-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+  }
+  
+  .details2 .goals_li:hover .tooltip-goals-text{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .details2 ul{      
+  list-style-type: none;
+  }
+  .details2 li {
+    float: left;
+    text-align: center;
+    right: 2rem;
+    position: relative;
+    top: 0rem;
+  }
+  
+  .details2 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+  }
+}
+
+@media screen and (max-width:777px) {
+  .details li {
+      float: none;
+  }
+
+  .color-overlay{
+    width: 52%;
+    height: 82%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tooltip-vision-text {
+    position: absolute;
+    /* display: flex; */
+    padding: 1px 3px;
+    margin-left: 41%;
+    text-align: justify;
+    background-color: #333;
+    margin-top: -3vh;
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    right: -7rem;
+  }
+  
+  .tooltip-vision-text::after {
+      content: "";
+      position: absolute;
+      transform: rotate(270deg);
+      top: 20%;
+      margin: 0 0 0 53%;
+      border-width: 6px;
+      border-style: solid;
+      border-color: #222 transparent transparent transparent;
+  }
+
+  .details .vision_li:hover .tooltip-vision-text{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .details ul{      
+    list-style-type: none;
+  }
+
+  /* Mission */
+  .tooltip-mission-text {
+    position: absolute;
+    position: absolute;
+    /* display: flex; */
+    padding: 1px 3px;
+    margin-left: 41%;
+    text-align: justify;
+    background-color: #333;
+    margin-top: -3vh;
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    right: -7rem;
+}
+
+.tooltip-mission-text::after {
+    content: "";
+    position: absolute;
+    transform: rotate(270deg);
+    top: 20%;
+    margin: 0 0 0 53%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.details1 .mission_li:hover .tooltip-mission-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+.details1 ul{      
+  list-style-type: none;
+  }
+.tooltip-goals-text {
+  position: absolute;
+  /* display: flex; */
+  padding: 1px 3px;
+  margin-left: 41%;
+  text-align: justify;
+  background-color: #333;
+  margin-top: -3vh;
+  color: white;
+  border: 0.5px solid black;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  right: -7rem;
+}
+
+.tooltip-goals-text::after {
+  content: "";
+  position: absolute;
+  transform: rotate(270deg);
+  top: 20%;
+  margin: 0 0 0 53%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+.details2 .goals_li:hover .tooltip-goals-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+.details2 ul{      
+  list-style-type: none;
+}
 }
