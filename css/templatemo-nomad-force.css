@@ -452,7 +452,7 @@ strong {
   .tooltip-mission-text{
     position: absolute;
     display: inline-block;
-    padding: 1px 3px;
+    padding: 1px -4px;
     margin-left: -7px;
     margin: -20px 0 0 0;
     text-align: justify;
@@ -463,8 +463,9 @@ strong {
     opacity: 0;
     transition: opacity 1s;
     z-index: 1;
-    width: 20rem;
-    left: 26rem;
+    width: 24rem;
+    left: 23rem;
+    top: -7rem;
   }
   
   .tooltip-mission-text::after{
@@ -503,7 +504,7 @@ strong {
   .tooltip-goals-text{
     position: absolute;
     display: inline-block;
-    padding: 1px 3px;
+    padding: 1px -4px;
     margin-left: -7px;
     margin: -20px 0 0 0;
     text-align: justify;
@@ -514,8 +515,9 @@ strong {
     opacity: 0;
     transition: opacity 1s;
     z-index: 1;
-    width: 20rem;
-    left: 30rem;
+    width: 24rem;
+    left: 28rem;
+    top: -7rem;
   }
   
   .tooltip-goals-text::after{
@@ -1058,8 +1060,6 @@ strong {
   img{
     width:946px;
   }
-
-  
 }
 
 
@@ -1586,4 +1586,10 @@ strong {
 .details2 ul{      
   list-style-type: none;
 }
+}
+
+@media (min-width: 1400px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 2400px;
+  }
 }
