@@ -262,6 +262,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: 15px;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -402,20 +403,11 @@ strong {
   ABOUT & TEAM MEMBERS               
 -----------------------------------------*/
 .about-image,
-.team-image {
+.team-image_1{
   width: 100%;
   height: 100%;
   max-height: 289px;
-  min-height: 550px;
-  object-fit: contain;
-}
-
-.about-image,
-.team-image_1{
-  width: 100%;
-  height: 72%;
-  max-height: 289px;
-  min-height: 737px;
+  min-height: 688px;
 }
 
 .team-thumb {
@@ -882,6 +874,7 @@ strong {
 .contact{
   font-family: 'GothamBook', 'sans-serif';
   color: #717275;
+  font-size: 20px;
 }
 
 .statement{
@@ -974,7 +967,7 @@ strong {
 .navbar ul{
   margin: 0;padding: 0;
   list-style-type: none;
-  background-color: #333;
+  background-color: #33333300;
   overflow: hidden;
 }
 .navbar li {
