@@ -994,12 +994,6 @@ strong {
   text-decoration: underline;
 }
 
-/*
-.navbar .dropdown{
-  display: inline-block;
-}*/
-
-
 .masthead{
   background-size: 100% 100%;
   min-height: 90vh;
@@ -1035,7 +1029,7 @@ strong {
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
   .vision{
     width: 100px;
     height: 100px;
@@ -1061,15 +1055,14 @@ strong {
     content: attr(data-tooltip);
     padding: 0.5rem;
     width: max-content;
-    max-width: 283%;
+    max-width: 388%;
     text-align: justify;
     background: rgba(0, 0, 0, 0);
-    left: 29rem;
-    top: -31rem;
-    font:#fff;
-    font-family:'GothamLight';
-    font-weight:bold;
-    color:#fff
+    left: 32rem;
+    top: -19rem;
+    font-family: 'GothamLight';
+    font-weight: bold;
+    color: #9d9fa2;
   }
   
   .vision:hover::before{
@@ -1108,10 +1101,9 @@ strong {
     background: rgba(0, 0, 0, 0);
     left: 38rem;
     top: -27rem;
-    font:#fff;
     font-family:'GothamLight';
     font-weight:bold;
-    color:#fff
+    color:#9d9fa2
 }
 
   .goals:hover::before{
@@ -1146,15 +1138,137 @@ strong {
       content: attr(data-tooltip);
       padding: 0.5rem;
       width: max-content;
-      max-width: 329%;
+      max-width: 349%;
       text-align: justify;
       background: rgba(0, 0, 0, 0);
-      left: 33rem;
+      left: 35rem;
       top: -16rem;
-      font:#fff;
-      font-family:'GothamLight';
-      font-weight:bold;
-      color:#fff
+      font-family: 'GothamLight';
+      font-weight: bold;
+      color: #9d9fa2;
+    }
+    .mission:hover::before{
+      --scale: 1;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+  .vision{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    left: 6rem;
+    font-family:"GothamLight";
+    color:#F57E25
+  }
+  .vision::before,
+  .vision::after{
+    --scale: 0;
+
+    position: absolute;
+    content: '';
+    top: -.25rem;
+    left: 460%;
+    transform: translateX(-50%) translateY(100%) scale(var(--scale));
+    transition: 150ms transform;
+  }
+
+  .vision::before{
+    content: attr(data-tooltip);
+    padding: 0.5rem;
+    width: max-content;
+    max-width: 388%;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0);
+    left: 24rem;
+    top: -20rem;
+    font-family: 'GothamLight';
+    font-weight: bold;
+    color: #9d9fa2;
+  }
+  
+  .vision:hover::before{
+    --scale: 1;
+  }
+  
+  /* goals css */
+  .goals{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    top: 4rem;
+    right: 14rem;
+    font-family:"GothamLight";
+    color:#F57E25
+  }
+  .goals::before,
+  .goals::after{
+    --scale: 0;
+
+    position: absolute;
+    content: '';
+    top: -.25rem;
+    left: 460%;
+    transform: translateX(-50%) translateY(100%) scale(var(--scale));
+    transition: 150ms transform;
+  }
+
+  .goals::before{
+    content: attr(data-tooltip);
+    padding: 0.5rem;
+    width: max-content;
+    max-width: 345%;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0);
+    left: 31rem;
+    top: -27rem;
+    font-family: 'GothamLight';
+    font-weight: bold;
+    color: #9d9fa2;
+}
+
+  .goals:hover::before{
+    --scale: 1;
+  }
+
+    /* mission css */
+    .mission{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      cursor: pointer;
+      top: 2rem;
+      right: 4rem;
+      font-family:"GothamLight";
+      color:#F57E25
+    }
+    .mission::before,
+    .mission::after{
+      --scale: 0;
+  
+      position: absolute;
+      content: '';
+      top: -.25rem;
+      left: 460%;
+      transform: translateX(-50%) translateY(100%) scale(var(--scale));
+      transition: 150ms transform;
+
+    }
+  
+    .mission::before{
+      content: attr(data-tooltip);
+      padding: 0.5rem;
+      width: max-content;
+      max-width: 349%;
+      text-align: justify;
+      background: rgba(0, 0, 0, 0);
+      left: 27rem;
+      top: -16rem;
+      font-family: 'GothamLight';
+      font-weight: bold;
+      color: #9d9fa2;
     }
     .mission:hover::before{
       --scale: 1;
@@ -1194,10 +1308,9 @@ strong {
     left: 13rem;
     top: -26rem;
     background: black;
-    font:#fff;
     font-family:'GothamLight';
     font-weight:bold;
-    color:#fff
+    color:#9d9fa2
   }
   
   .vision:hover::before{
@@ -1210,10 +1323,10 @@ strong {
     height: 100px;
     position: relative;
     cursor: pointer;
-    top: 2rem;
-    right: -1.3rem;
-    font-family:"GothamLight";
-    color:#F57E25
+    top: 9rem;
+    right: 11.7rem;
+    font-family: "GothamLight";
+    color: #F57E25;
   }
   .goals::before,
   .goals::after{
@@ -1236,10 +1349,9 @@ strong {
     background: rgb(0 0 0);
     left: 12rem;
     top: -27rem;
-    font:#fff;
     font-family:'GothamLight';
     font-weight:bold;
-    color:#fff
+    color:#9d9fa2
 }
 
   .goals:hover::before{
@@ -1281,10 +1393,9 @@ strong {
       left: 12rem;
       top: -20rem;
       background: black;
-      font:#fff;
       font-family:'GothamLight';
       font-weight:bold;
-      color:#fff
+      color:#9d9fa2
     }
     .mission:hover::before{
       --scale: 1;
