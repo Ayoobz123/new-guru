@@ -412,7 +412,7 @@ strong {
     transition: opacity 1s;
     z-index: 1;
     width: 24rem;
-    left: 19rem;
+    left: 25rem;
     top: -7rem;
   }
   
@@ -437,9 +437,9 @@ strong {
   .details li {
     float: left;
     text-align: center;
-    right: -5rem;
+    right: -4rem;
     position: relative;
-    top: -0.5rem;
+    top: -2rem;
   }
   
   .details li a:hover {
@@ -464,7 +464,7 @@ strong {
     transition: opacity 1s;
     z-index: 1;
     width: 24rem;
-    left: 23rem;
+    left: 30rem;
     top: -7rem;
   }
   
@@ -487,12 +487,12 @@ strong {
   list-style-type: none;
   }
   .details1 li {
-    float: left;
-    text-align: center;
-    right: -1.5rem;
-    position: relative;
-    top: 0rem;
-  }
+      float: left;
+      text-align: center;
+      right: 1.5rem;
+      position: relative;
+      top: -1rem;
+    } 
   
   .details1 li a:hover {
   background-color: rgb(90, 81, 81);
@@ -516,7 +516,7 @@ strong {
     transition: opacity 1s;
     z-index: 1;
     width: 24rem;
-    left: 28rem;
+    left: 35rem;
     top: -7rem;
   }
   
@@ -541,7 +541,7 @@ strong {
   .details2 li {
     float: left;
     text-align: center;
-    right: 2rem;
+    right: 7rem;
     position: relative;
     top: 0rem;
   }
@@ -1163,7 +1163,7 @@ strong {
     transition: opacity 1s;
     z-index: 1;
     width: 20rem;
-    left: 14rem;
+    left: 30rem;
   }
   
   .tooltip-vision-text::after{
