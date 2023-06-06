@@ -396,6 +396,15 @@ strong {
     align-items: center;
   }
 
+  .color-overlay1{
+    width: 67%;
+    height: 82%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .tooltip-vision-text{
     position: absolute;
     display: inline-block;
@@ -430,6 +439,13 @@ strong {
   .details .vision_li:hover .tooltip-vision-text{
       visibility: visible;
       opacity: 1;
+      transition: 2s;
+  }
+
+  .details .vision_statement:hover
+  {
+    font-weight: bold;
+    font-size: 24px;
   }
   
   .details ul{      
@@ -438,9 +454,10 @@ strong {
   .details li {
     float: left;
     text-align: center;
-    right: -4.1rem;
+    right: -4.3rem;
     position: relative;
-    top: -1.9rem;
+    top: -4.5rem;
+}
   }
   
   .details li a:hover {
@@ -1356,7 +1373,7 @@ strong {
     text-align: center;
     right: -5rem;
     position: relative;
-    top: -0.5rem;
+    top: -4.5rem;
   }
   
   .details li a:hover {
@@ -1535,9 +1552,9 @@ strong {
     transition: opacity 1s;
     z-index: 1;
     right: -7rem;
-}
+  }
 
-.tooltip-mission-text::after {
+  .tooltip-mission-text::after {
     content: "";
     position: absolute;
     transform: rotate(270deg);
