@@ -454,10 +454,9 @@ strong {
   .details li {
     float: left;
     text-align: center;
-    right: -4.3rem;
+    right: -5.3rem;
     position: relative;
-    top: -4.5rem;
-}
+    top: -1.8rem;
   }
   
   .details li a:hover {
@@ -1652,4 +1651,54 @@ strong {
 
 .bg-secondary {
   background-color: #7e8185!important;
+}
+
+@media screen and (max-width: 990px) and (min-width: 778px){
+  .details li {
+      float: left;
+      text-align: center;
+      right: -5rem;
+      position: relative;
+      top: -1.8rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .details1 li {
+      float: left;
+      text-align: center;
+      right: -2.1rem;
+      position: relative;
+      top: -1.7rem;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 778px){
+  .details1 li {
+      float: left;
+      text-align: center;
+      right: -2.5rem;
+      position: relative;
+      top: -1.7rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .details2 li {
+      float: left;
+      text-align: center;
+      right: 1rem;
+      position: relative;
+      top: -1.4rem;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 778px){
+  .details2 li {
+      float: left;
+      text-align: center;
+      right: 0rem;
+      position: relative;
+      top: -1.7rem;
+  }
 }
