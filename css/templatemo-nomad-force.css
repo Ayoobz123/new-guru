@@ -371,6 +371,161 @@ strong {
   overflow: hidden;
 }
 
+.color-overlay{
+  width: 67%;
+  height: 82%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-vision-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.details .vision_li:hover .tooltip-vision-text{
+    visibility: visible;
+    opacity: 1;
+    transition: 2s;
+}
+
+.details .vision_statement:hover
+{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.details ul{      
+  list-style-type: none;
+}
+.details li {
+  float: left;
+  text-align: center;
+  right: -7.2rem;
+  position: relative;
+  top: -4rem;
+  font-size: 20px;
+}
+
+.details li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+}
+
+/* Mission */
+
+.tooltip-mission-text{
+  position: absolute;
+  display: inline-block;
+  padding: 1px 0px;
+  margin-left: -7px;
+  margin: -20px 0 0 0;
+  text-align: justify;
+  /* background-color: #333; */
+  color: #9d9fa2;
+  /* border: 0.5px solid black; */
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 20rem;
+  left: 35rem;
+  top: -5rem;
+  font-family: GothamLight;
+  font-size: 0px;
+}
+
+.tooltip-mission-text::after{
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    left: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.details1 .mission_li:hover .tooltip-mission-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.details1 ul{      
+  list-style-type: none;
+}
+.details1 li {
+  float: left;
+  text-align: center;
+  right: 0.9rem;
+  position: relative;
+  top: -0.9rem;
+}
+
+.details1 li a:hover {
+  background-color: rgb(90, 81, 81);
+  text-decoration: underline;
+}
+
+/* Goals */
+
+.tooltip-goals-text{
+  position: absolute;
+  display: inline-block;
+  padding: 1px 30px;
+  margin-left: -7px;
+  margin: -20px 0 0 0;
+  text-align: justify;
+  /* background-color: #333; */
+  color: #9d9fa2;
+  /* border: 0.5px solid black; */
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 25rem;
+  left: 40rem;
+  top: -5rem;
+  font-family: GothamLight;
+}
+
+.tooltip-goals-text::after{
+  content: "";
+  position: absolute;
+  margin-left: -5px;
+  left: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.details2 .goals_li:hover .tooltip-goals-text{
+  visibility: visible;
+  opacity: 1;
+}
+
+.details2 ul{      
+list-style-type: none;
+}
+.details2 li {
+  float: left;
+  text-align: center;
+  right: 6rem;
+  position: relative;
+  top: 0rem;
+}
+
+.details2 li a:hover {
+background-color: rgb(90, 81, 81);
+text-decoration: underline;
+}
+
 @media screen and (min-width: 992px) {
   .hero {
     height: 100vh;
@@ -387,189 +542,6 @@ strong {
     position: relative;
   }
 
-  .color-overlay{
-    width: 67%;
-    height: 82%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .color-overlay1{
-    width: 67%;
-    height: 82%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .tooltip-vision-text{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 0px;
-    margin-left: -7px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    /* background-color: #333; */
-    color: #9d9fa2;
-    /* border: 0.5px solid black; */
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 20rem;
-    left: 30rem;
-    top: -5rem;
-    font-family: GothamLight;
-    font-size: 0px;
-  }
-  
-  .tooltip-vision-text::after{
-      content: "";
-      position: absolute;
-      margin-left: -5px;
-      left: 50%;
-      border-width: 6px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
-  }
-  
-  .details .vision_li:hover .tooltip-vision-text{
-      visibility: visible;
-      opacity: 1;
-      transition: 2s;
-  }
-
-  .details .vision_statement:hover
-  {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .details ul{      
-    list-style-type: none;
-  }
-  .details li {
-    float: left;
-    text-align: center;
-    right: -5.3rem;
-    position: relative;
-    top: -1.8rem;
-  }
-  
-  .details li a:hover {
-    background-color: rgb(90, 81, 81);
-    text-decoration: underline;
-  }
-  
-  /* Mission */
-  
-  .tooltip-mission-text{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 0px;
-    margin-left: -7px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    /* background-color: #333; */
-    color: #9d9fa2;
-    /* border: 0.5px solid black; */
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 20rem;
-    left: 35rem;
-    top: -5rem;
-    font-family: GothamLight;
-    font-size: 0px;
-  }
-  
-  .tooltip-mission-text::after{
-      content: "";
-      position: absolute;
-      margin-left: -5px;
-      left: 50%;
-      border-width: 6px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
-  }
-  
-  .details1 .mission_li:hover .tooltip-mission-text{
-      visibility: visible;
-      opacity: 1;
-  }
-  
-  .details1 ul{      
-    list-style-type: none;
-  }
-  .details1 li {
-    float: left;
-    text-align: center;
-    right: 0.9rem;
-    position: relative;
-    top: -0.9rem;
-  }
-  
-  .details1 li a:hover {
-    background-color: rgb(90, 81, 81);
-    text-decoration: underline;
-  }
-  
-  /* Goals */
-  
-  .tooltip-goals-text{
-    position: absolute;
-    display: inline-block;
-    padding: 1px 30px;
-    margin-left: -7px;
-    margin: -20px 0 0 0;
-    text-align: justify;
-    /* background-color: #333; */
-    color: #9d9fa2;
-    /* border: 0.5px solid black; */
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 1s;
-    z-index: 1;
-    width: 25rem;
-    left: 40rem;
-    top: -5rem;
-    font-family: GothamLight;
-  }
-  
-  .tooltip-goals-text::after{
-    content: "";
-    position: absolute;
-    margin-left: -5px;
-    left: 50%;
-    border-width: 6px;
-    border-style: solid;
-    border-color: #222 transparent transparent transparent;
-  }
-  
-  .details2 .goals_li:hover .tooltip-goals-text{
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .details2 ul{      
-  list-style-type: none;
-  }
-  .details2 li {
-    float: left;
-    text-align: center;
-    right: 6rem;
-    position: relative;
-    top: 0rem;
-  }
-  
-  .details2 li a:hover {
-  background-color: rgb(90, 81, 81);
-  text-decoration: underline;
-  }
 }
 
 .heroText {
@@ -1695,10 +1667,177 @@ strong {
 
 @media screen and (max-width: 990px) and (min-width: 778px){
   .details2 li {
+    float: left;
+    text-align: center;
+    right: -3rem;
+    position: relative;
+    top: -3.7rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+    .details1 li {
       float: left;
       text-align: center;
-      right: 0rem;
+      right: -9.5rem;
       position: relative;
-      top: -1.7rem;
+      top: -4.2rem;
+      font-size: 21px;
   }
+}
+
+@media screen and (min-width: 992px){
+	.details2 li {
+    		float: left;
+    		text-align: center;
+    		right: 1.9rem;
+    position: relative;
+    top: -4.3rem;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .details li {
+      float: left;
+      text-align: center;
+      right: -12.6rem;
+      position: relative;
+      top: -4rem;
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 778px){
+  .details li {
+    float: left;
+    text-align: center;
+    right: -7.6rem;
+    position: relative;
+    top: -4rem;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 777px){
+  .details li {
+    float: left;
+    text-align: center;
+    right: -9.5rem;
+    position: relative;
+    top: -4.2rem;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 777px){
+  .details1 li {
+    float: left;
+    text-align: center;
+    right: -4.1rem;
+    position: relative;
+    top: -3.9rem;
+  }
+}
+
+@media screen and (max-width: 777px){
+  .details2 li {
+    float: left;
+    text-align: center;
+    right: -2rem;
+    position: relative;
+    top: -4.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 778px){
+  .details1 li {
+      float: left;
+      text-align: center;
+      right: -6.5rem;
+      position: relative;
+      top: -4.4rem;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .details2 li {
+    float: left;
+    text-align: center;
+    right: -4.1rem;
+    position: relative;
+    top: -4.3rem;
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 540px){
+  .details li {
+      float: left;
+      text-align: center;
+      right: -4.1rem;
+      position: relative;
+      top: -3.3rem;
+      font-size: 20px;
+  }
+}
+
+.tooltip-vision-text{
+  position: absolute;
+  display: inline-block;
+  padding: 1px 0px;
+  margin-left: -7px;
+  margin: -20px 0 0 0;
+  text-align: justify;
+  /* background-color: #333; */
+  color: #9d9fa2;
+  /* border: 0.5px solid black; */
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 20rem;
+  left: 32rem;
+  top: -2rem;
+  font-family: GothamLight;
+  font-size: 0px;
+}
+
+.tooltip-mission-text {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 0px;
+  margin-left: -7px;
+  margin: -20px 0 0 0;
+  text-align: justify;
+  /* background-color: #333; */
+  color: #9d9fa2;
+  /* border: 0.5px solid black; */
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+  width: 20rem;
+  left: 35rem;
+  top: -5rem;
+  font-family: GothamLight;
+  font-size: 0px;
+}
+
+.tooltip-goals-text {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 0px;
+  margin: -20px 0px 0px;
+  text-align: justify;
+  color: rgb(157, 159, 162);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+  z-index: 1;
+  width: 20rem;
+  left: 40.5rem;
+  top: -7.8rem;
+  font-family: GothamLight;
 }
