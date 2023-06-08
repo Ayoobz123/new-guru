@@ -1905,4 +1905,12 @@ text-decoration: underline;
     font-family: GothamLight;
     font-size: 0px;
   }
+
+  .details1 li {
+    float: left;
+    text-align: center;
+    right: -4.1rem;
+    position: relative;
+    top: -5.4rem;
+  }
 }
